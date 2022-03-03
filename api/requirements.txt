@@ -3,3 +3,4 @@ flask-restful
 pymongo
 mongoengine
 nose
+python-dateutil

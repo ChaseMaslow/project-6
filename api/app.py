@@ -1,3 +1,0 @@
-"""
-Brevets RESTful API
-"""

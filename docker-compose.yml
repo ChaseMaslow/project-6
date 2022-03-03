@@ -12,7 +12,7 @@ services:
             API_ADDR: api
             API_PORT: $API_PORT
             PORT: $BREVETS_PORT
-            DEBUG: "True"
+            DEBUG: $DEBUG
     api:
         build: api/.
         command: python -u api.py -P $API_PORT
@@ -22,7 +22,8 @@ services:
             - db
         environment:
             MONGODB_HOSTNAME: db
+            MONGODB_PORT: $MONGODB_PORT
             PORT: $API_PORT
-            DEBUG: "True"
+            DEBUG: $DEBUG
     db:
         image: mongo:latest
