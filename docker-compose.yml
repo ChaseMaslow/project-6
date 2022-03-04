@@ -15,7 +15,7 @@ services:
             DEBUG: $DEBUG
     api:
         build: api/.
-        command: python -u api.py -P $API_PORT
+        command: python -u app.py -P $API_PORT
         ports:
             - "5001:$API_PORT"
         depends_on:
