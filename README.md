@@ -1,6 +1,6 @@
 # UOCIS322 - Project 6 #
 
-####Description
+#### Description
 This is a Flask-RESTful app designed to replace the [ACP Brevet Control calculator](https://rusa.org/octime_acp.html) found on the Randonneurs USA official website. The web page responds to user input live, with no redirects or refreshes. The calculator accepts miles or kilometers, and does conversions automatically. Data can be stored and retrieved by the user from a MongoDB database, accessed using the API server.
 
 ### How it Works
@@ -17,9 +17,9 @@ The table in the webpage is operated by a Javascript (+JQuery) front-end, while 
 * Flask, Flask-RESTful, Requests, Arrow, MongoEngine, PyMongo, Nose (testing)
 * JQuery, Moment
 
-##### Author Info
-* Chase Maslow
-* chasemaslow@gmail.com
+##### Authors & Author Info
+* Chase Maslow - chasemaslow@gmail.com
+* Ali Hassani (API code)
 
 ## How to start
 
