@@ -10,7 +10,7 @@ from resources import BrevetAPI, BrevetsAPI
 
 app = Flask(__name__)
 api = Api(app)
-connect(db='brevets_db', host="mongodb://" + os.environ['MONGODB_HOSTNAME'], port=int(os.environ['MONGODB_PORT']))
+connect(host="mongodb://" + os.environ['MONGODB_HOSTNAME'] + ":" + os.environ['MONGODB_PORT'])
 
 ##
 # API Resource Routing
