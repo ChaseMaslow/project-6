@@ -22,7 +22,7 @@ services:
             - db
         environment:
             MONGODB_HOSTNAME: db
-            MONGODB_PORT: $MONGODB_PORT
+            MONGODB_PORT: ${MONGODB_PORT:-27017}
             PORT: $API_PORT
             DEBUG: $DEBUG
     db:
